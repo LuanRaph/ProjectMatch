@@ -9,8 +9,15 @@ import lombok.Setter;
 @Setter
 
 public class RecomendacaoDTO {
-    private Long id;
     private Long freelancerId;
+    private String freelancerNome;
+    private String freelancerLinguagens;
+    private String freelancerSenioridade;
+
     private Long projetoId;
+    private String projetoTitulo;
+    private String projetoDescricao;
+    private String projetoTecnologiasNecessarias;
+
     private Integer scoreTotal;
 }

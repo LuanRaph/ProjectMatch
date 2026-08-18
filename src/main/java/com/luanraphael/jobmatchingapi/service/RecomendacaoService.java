@@ -20,8 +20,15 @@ public class RecomendacaoService {
 
         RecomendacaoDTO dto = new RecomendacaoDTO();
         dto.setFreelancerId(freelancer.getId());
-        dto.setScoreTotal(scoreTotal);
+        dto.setFreelancerNome(freelancer.getNome());
+        dto.setFreelancerLinguagens(freelancer.getLinguagens());
+        dto.setFreelancerSenioridade(freelancer.getSenioridade());
+
         dto.setProjetoId(projeto.getId());
+        dto.setProjetoTitulo(projeto.getTitulo());
+        dto.setProjetoDescricao(projeto.getDescricao());
+        dto.setProjetoTecnologiasNecessarias(projeto.getTecnologiasNecessarias());
+        dto.setScoreTotal(scoreTotal);
         return dto;
     }
 
